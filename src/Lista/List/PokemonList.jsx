@@ -15,6 +15,12 @@ const PokemonList = () =>{
                 pokemon={"./Imagenes/charmander.png"}
                 title={"fire-name"}
                 name={"Charmander"}/>
+
+            <Card type={"steel"}
+                number={"304"}
+                pokemon={"./Imagenes/aron.png"}
+                title={"steel-name"}
+                name={"Aron"}/>
         </div>
     )
 }
