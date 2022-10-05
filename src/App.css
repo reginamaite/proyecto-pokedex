@@ -36,40 +36,151 @@
     transform: rotate(360deg);
   }
 }
-.list-container{
+
+.App{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
+}
+
+.app-navbar{
+  width: 60vw;
+  height: 20vh;
+  display: flex;
+  justify-content: flex-start;
+}
+ 
+.navbar{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 4vw;
+}
+
+.title{
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.logo{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.input{
+  width: 40vw;
+}
+
+.list-container{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding: 2vh;
 }
 
+.mini{
+    width: 8vw;
+    height: 18vh;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.number-span{
+  display: flex;
+  align-self: flex-end;
+  margin: 5px;
+}
 .grass{
-  width: 15vw;
-  height: 35vh;
+  min-width: 12vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   border: 5px solid #74CB48;
   border-radius: 1rem;
   margin: 1vh;
 }
 
-.grass-name{
+.grass-name-list{
   width:100%;
   height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color:#74CB48;
-  border-radius: 0rem 0rem 1rem 1rem;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 .fire{
-  width: 15vw;
-  height: 35vh;
+  width: 12vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   border: 5px solid #F57D31;
   border-radius: 1rem;
   margin: 1vh;
 }
 
-.fire-name{
+.fire-name-list{
   width:100%;
   height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color:#F57D31;
-  border-radius: 0rem 0rem 1rem 1rem;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.water{
+  width: 12vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid #6493EB;
+  border-radius: 1rem;
+  margin: 1vh;
+}
+
+.water-name-list{
+  width:100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#6493EB;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.steel{
+  width: 12vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid #B7B9D0;
+  border-radius: 1rem;
+  margin: 1vh;
+}
+
+.steel-name-list{
+  width:100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#B7B9D0;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }

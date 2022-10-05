@@ -1,5 +1,6 @@
 import './App.css';
-import PokemonList from './Lista/List/PokemonList';
+import Nav from './App/Pokemon-Search/Nav';
+import PokemonList from './App/List/PokemonList';
 
 
 
@@ -7,7 +8,11 @@ import PokemonList from './Lista/List/PokemonList';
 function App() {
   return (
     <div className="App">
-             <PokemonList/>
+            <div className='app-navbar'>
+              <Nav/>
+            </div>
+
+            <PokemonList/>
     </div>
   );
 }
