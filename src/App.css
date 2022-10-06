@@ -96,17 +96,22 @@
   align-self: flex-end;
   margin: 5px;
 }
-.grass{
-  min-width: 12vw;
+
+.box{
+  width: 12vw;
   height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  border: 5px solid #74CB48;
   border-radius: 1rem;
   margin: 1vh;
+  border: 5px solid #282c34;
+}
+
+.grass{
+  border: 5px solid #74CB48;
 }
 
 .grass-name-list{
@@ -182,5 +187,49 @@
   align-items: center;
   justify-content: center;
   background-color:#B7B9D0;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.normal{
+  width: 12vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid #AAA67F;
+  border-radius: 1rem;
+  margin: 1vh;
+}
+
+.normal-name-list{
+  width:100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#AAA67F;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.ghost{
+  width: 12vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid #70559B;
+  border-radius: 1rem;
+  margin: 1vh;
+}
+
+.ghost-name-list{
+  width:100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#70559B;
   border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
