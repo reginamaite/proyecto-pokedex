@@ -1,6 +1,6 @@
 
     export const pokemon=()=> [
-        {
+        {   "title" : "grass-name-list",
             "id" : 1,
             "name": "Bulbasaur",
             "type": "Grass",
@@ -11,7 +11,7 @@
             "description": "There is a plant seed on its back right from the day this Pokémon is born, The seed slowly grows larger."
         }
         ,
-        {
+        {   "title" : "psychic-name-list",
             "id" : 152,
             "name": "Mew",
             "type": "Psychic",
@@ -22,7 +22,7 @@
             "description": "When view through a microscope this Pokemon's short, fine, delicate hair can be seen."
         }
         ,
-        {
+        {   "title" : "electric-name-list",
             "id" : 25,
             "name": "Pikachu",
             "type": "Electric",
@@ -33,7 +33,7 @@
             "description": "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy."
         }
         ,
-        {
+        {   "title" : "fire-name-list",
             "id" : 4,
             "name": "Charmander",
             "type": "Fire",
@@ -44,7 +44,7 @@
             "description": "It has a preference for hot things. When it rains, steam is said to sput from the tip of it's tail"
         }
         ,
-        {
+        {   "title" : "water-name-list",
             "id" : 7,
             "name": "Squirtle",
             "type": "Water",
@@ -55,7 +55,7 @@
             "description": "When it retracts it's long neck into it's shell, it squirts out water with vigorous force."
         }
         ,
-        {
+        {   "title" : "ghost-name-list",
             "id" : 92,
             "name": "Gastly",
             "type": "Ghost",
@@ -66,7 +66,7 @@
             "description": "Born from gases, anyone would faint if engulfed by it's gaseous body, which contains poison."
         }
         ,
-        {
+        {   "title" : "normal-name-list",
             "id" : 132,
             "name": "Ditto",
             "type": "Normal",
@@ -77,7 +77,7 @@
             "description": "It can reconstitute it's entire cellular structure to change into what it sees, but it returns to normal when it relaxes."
         }
         ,
-        {
+        {   "title" : "bug-name-list",
             "id" : 12,
             "name": "Butterfree",
             "type": "Bug",
@@ -88,7 +88,7 @@
             "description": "In battle, it flaps it's wings at great speed to release highly toxic dust into the air."
         }
         ,
-        {
+        {   "title" : "steel-name-list",
             "id" : 304,
             "name": "Aron",
             "type": "Steel",
