@@ -4,8 +4,7 @@ import Card from "../Cards/Card";
 const PokemonList = () =>{
     return(
         <div className="list-container">
-            <Card box={"box"} 
-                  type={"grass"} 
+            <Card type={"grass"} 
                 number={"#001"}
                 pokemon={"./Imagenes/bulbasaur.png"}
                 title={"grass-name-list"}

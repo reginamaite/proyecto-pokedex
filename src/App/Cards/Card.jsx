@@ -1,8 +1,8 @@
 import React from "react";
 
-const Card = ({box,type,number,pokemon,title,name}) =>{
+const Card = ({type,number,pokemon,title,name}) =>{
     return(
-        <div className={(box,type)}>
+        <div className={type}>
             <span className="number-span">{number}</span>
             <img className="mini" src={pokemon} alt="" />
 
