@@ -1,5 +1,4 @@
 
-
 .App{
   display: flex;
   align-items: center;
@@ -84,6 +83,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
   border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
@@ -158,3 +158,4 @@
 .electric-name-list{
   background-color:#F9CF30;
 }
+
