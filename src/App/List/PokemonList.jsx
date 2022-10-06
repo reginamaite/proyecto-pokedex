@@ -44,6 +44,27 @@ const PokemonList = () =>{
                 pokemon={"./Imagenes/gastly.png"}
                 title={"ghost-name-list"}
                 name={"Gastly"}/>
+
+            <Card type={"psychic"}
+                  box={"box"} 
+                number={"#152"}
+                pokemon={"./Imagenes/mew.png"}
+                title={"psychic-name-list"}
+                name={"Mew"}/>
+
+            <Card type={"bug"}
+                  box={"box"} 
+                number={"#012"}
+                pokemon={"./Imagenes/butterfree.png"}
+                title={"bug-name-list"}
+                name={"Butterfree"}/>
+
+            <Card type={"electric"}
+                  box={"box"} 
+                number={"#025"}
+                pokemon={"./Imagenes/pikachu.png"}
+                title={"electric-name-list"}
+                name={"Pikachu"}/>
         </div>
     )
 }

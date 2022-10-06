@@ -72,6 +72,10 @@
 
 .input{
   width: 40vw;
+  height: 5vh;
+  border-radius: 0.5rem;
+  border: solid #666666 1px;
+  background-color: white;
 }
 
 .list-container{
@@ -83,6 +87,7 @@
   align-content: baseline;
   flex-wrap: wrap;
   padding: 2vh;
+  background-color: #f7f7f7;
 }
 
 .mini{
@@ -108,6 +113,7 @@
   border: 5px solid #74CB48;
   border-radius: 1rem;
   margin: 1vh;
+  background-color: white;
 }
 
 .grass-name-list{
@@ -130,6 +136,7 @@
   border: 5px solid #F57D31;
   border-radius: 1rem;
   margin: 1vh;
+  background-color: white;
 }
 
 .fire-name-list{
@@ -152,6 +159,7 @@
   border: 5px solid #6493EB;
   border-radius: 1rem;
   margin: 1vh;
+  background-color: white;
 }
 
 .water-name-list{
@@ -174,6 +182,7 @@
   border: 5px solid #B7B9D0;
   border-radius: 1rem;
   margin: 1vh;
+  background-color: white;
 }
 
 .steel-name-list{
@@ -196,6 +205,7 @@
   border: 5px solid #AAA67F;
   border-radius: 1rem;
   margin: 1vh;
+  background-color: white;
 }
 
 .normal-name-list{
@@ -218,6 +228,7 @@
   border: 5px solid #70559B;
   border-radius: 1rem;
   margin: 1vh;
+  background-color: white;
 }
 
 .ghost-name-list{
@@ -227,5 +238,74 @@
   align-items: center;
   justify-content: center;
   background-color:#70559B;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.psychic{
+  width: 12vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid #FB5584;
+  border-radius: 1rem;
+  margin: 1vh;
+  background-color: white;
+}
+
+.psychic-name-list{
+  width:100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#FB5584;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.bug{
+  width: 12vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid #A7B723;
+  border-radius: 1rem;
+  margin: 1vh;
+  background-color: white;
+}
+
+.bug-name-list{
+  width:100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#A7B723;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.electric{
+  width: 12vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid #F9CF30;
+  border-radius: 1rem;
+  margin: 1vh;
+  background-color: white;
+}
+
+.electric-name-list{
+  width:100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#F9CF30;
   border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
