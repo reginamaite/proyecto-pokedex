@@ -11,6 +11,7 @@ function App() {
             <div className='app-navbar'>
               <Nav/>
             </div>
+            
             <PokemonList/>
     </div>
   );

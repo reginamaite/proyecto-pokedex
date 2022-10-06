@@ -1,41 +1,4 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .App{
   display: flex;
@@ -43,22 +6,23 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  background-color: #f7f7f7;
 }
 
 .app-navbar{
-  width: 50vw;
+  width: 100vw;
   height: 20vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
  
 .navbar{
   display: flex;
   flex-direction: column;
-  margin-left: 5vw;
 }
 
 .title{
+  height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -71,7 +35,7 @@
 }
 
 .input{
-  width: 40vw;
+  width: 38vw;
   height: 5vh;
   border-radius: 0.5rem;
   border: solid #666666 1px;
@@ -86,7 +50,7 @@
   justify-content: center;
   align-content: baseline;
   flex-wrap: wrap;
-  padding: 2vh;
+  margin-top: 2vh;
   background-color: #f7f7f7;
 }
 
@@ -103,209 +67,94 @@
   margin: 5px;
 }
 
-.grass{
+.box{
   width: 12vw;
   height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 5px solid #74CB48;
   border-radius: 1rem;
   margin: 1vh;
   background-color: white;
+}
+.name-box{
+  width:100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.grass{
+  border: 2px solid #74CB48;
 }
 
 .grass-name-list{
-  width:100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color:#74CB48;
-  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 .fire{
-  width: 12vw;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border: 5px solid #F57D31;
-  border-radius: 1rem;
-  margin: 1vh;
-  background-color: white;
+  border: 2px solid #F57D31;
 }
 
 .fire-name-list{
-  width:100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color:#F57D31;
-  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 .water{
-  width: 12vw;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border: 5px solid #6493EB;
-  border-radius: 1rem;
-  margin: 1vh;
-  background-color: white;
+  border: 2px solid #6493EB;
 }
 
 .water-name-list{
-  width:100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color:#6493EB;
-  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 .steel{
-  width: 12vw;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border: 5px solid #B7B9D0;
-  border-radius: 1rem;
-  margin: 1vh;
-  background-color: white;
+  border: 2px solid #B7B9D0;
 }
 
 .steel-name-list{
-  width:100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color:#B7B9D0;
-  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 .normal{
-  width: 12vw;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border: 5px solid #AAA67F;
-  border-radius: 1rem;
-  margin: 1vh;
-  background-color: white;
+  border: 2px solid #AAA67F;
 }
 
 .normal-name-list{
-  width:100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color:#AAA67F;
-  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 .ghost{
-  width: 12vw;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border: 5px solid #70559B;
-  border-radius: 1rem;
-  margin: 1vh;
-  background-color: white;
+  border: 2px solid #70559B;
 }
 
 .ghost-name-list{
-  width:100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color:#70559B;
-  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 .psychic{
-  width: 12vw;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border: 5px solid #FB5584;
-  border-radius: 1rem;
-  margin: 1vh;
-  background-color: white;
+  border: 2px solid #FB5584;
 }
 
 .psychic-name-list{
-  width:100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color:#FB5584;
-  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 .bug{
-  width: 12vw;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border: 5px solid #A7B723;
-  border-radius: 1rem;
-  margin: 1vh;
-  background-color: white;
+  border: 2px solid #A7B723;
 }
 
 .bug-name-list{
-  width:100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color:#A7B723;
-  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 .electric{
-  width: 12vw;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border: 5px solid #F9CF30;
-  border-radius: 1rem;
-  margin: 1vh;
-  background-color: white;
+  border: 2px solid #F9CF30;
 }
 
 .electric-name-list{
-  width:100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color:#F9CF30;
-  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
