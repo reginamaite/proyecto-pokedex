@@ -4,8 +4,14 @@ const Nav = () =>{
     return(
         <div className="navbar">
             <div className="title">
-                <img className="logo" src="../Imagenes/Pokeball.png" alt="" />
-                <h1>Pokédex</h1>
+                <div className="pokemon-logo">
+                    <img className="logo" src="../Imagenes/Pokeball.png" alt="" />
+                    <h1>Pokédex</h1>
+                </div>
+                <div className="order-button">
+                    <span>#</span>
+                    <img src="../Imagenes/Arrow.svg" alt="" />
+                </div>
             </div>
 
             <div>

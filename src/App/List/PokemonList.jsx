@@ -12,7 +12,7 @@ const PokemonList = ({list}) =>{
                         <Card type={`${pokemon.type.toLowerCase()} box`} 
                         number={`${pokemon.id}`}
                         pokemon={`./Imagenes/${pokemon.name.toLowerCase()}.png`}
-                        title={`${pokemon.title} name-box`}
+                        title={`${pokemon.type.toLowerCase()}-name-list name-box`}
                         name={`${pokemon.name}`}/>
                     )
                 })
