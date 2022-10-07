@@ -7,7 +7,7 @@ const PokemonList = ({list}) =>{
         <div className="list-container">
             {
                 list.map((pokemon,key)=>{
-                    console.log(pokemon.id)
+                    console.log(pokemon.type)
                     return (
                         <Card key={key}
                         type={`${pokemon.type.toLowerCase()} box`} 

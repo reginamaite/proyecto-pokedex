@@ -94,8 +94,6 @@ align-items: center;
 }
 
 .box::before{
-  width: 26vh;
-  height: 25vh;
   content: '';
   position: absolute;
   background: -webkit-linear-gradient(to right, #56bbf2, #e873f5, #fa8f2c);
