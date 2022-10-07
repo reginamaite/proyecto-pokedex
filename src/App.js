@@ -11,9 +11,7 @@ function App() {
   
   const changeOrder = () =>{
     if (pokemonOrder === "#"){
-      console.log(changeOrder)
       setPokemonOrder("AZ")
-      console.log(changeOrder.value)
     }
     else{
       setPokemonOrder("#")
