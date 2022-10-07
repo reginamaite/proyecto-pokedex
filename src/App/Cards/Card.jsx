@@ -1,13 +1,13 @@
 import React from "react";
 
-const Card = ({type,number,pokemon,title,name}) =>{
+const Card = (props) =>{
     return(
-        <div className={type}>
-            <span className="number-span">{number}</span>
-            <img className="mini" src={pokemon} alt="" />
+        <div className={props.type}>
+            <span className="number-span">#{props.number}</span>
+            <img className="mini" src={props.pokemon} alt="" />
 
-            <div className={title}>
-                <span>{name}</span>
+            <div className={props.title}>
+                <span>{props.name}</span>
             </div>
         </div>
     )
