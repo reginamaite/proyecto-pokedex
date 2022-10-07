@@ -6,10 +6,11 @@ const PokemonList = ({list}) =>{
     return(
         <div className="list-container">
             {
-                list.map((pokemon)=>{
+                list.map((pokemon,key)=>{
                     console.log(pokemon.id)
                     return (
-                        <Card type={`${pokemon.type.toLowerCase()} box`} 
+                        <Card key={key}
+                        type={`${pokemon.type.toLowerCase()} box`} 
                         number={`${pokemon.id}`}
                         pokemon={`./Imagenes/${pokemon.name.toLowerCase()}.png`}
                         title={`${pokemon.type.toLowerCase()}-name-list name-box`}

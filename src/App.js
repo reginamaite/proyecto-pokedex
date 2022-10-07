@@ -7,11 +7,23 @@ import {pokemon}  from './Database/db';
 
 function App() {
   const [pokemonList,setPokemonList] = useState (pokemon)
+  const [pokemonOrder,setPokemonOrder] = useState ("#")
+  
+  const changeOrder = () =>{
+    if (pokemonOrder === "#"){
+      setPokemonOrder("AZ")
+    }
+    else{
+      setPokemonOrder("#")
+    }
+  } 
+
 
   return (
     <div className="App">
             <div className='app-navbar'>
-              <Nav/>
+              <Nav pokemonOrder={pokemonOrder}
+                   changeOrder={changeOrder} />
             </div>
             
             <PokemonList list={pokemonList}/>

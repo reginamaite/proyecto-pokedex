@@ -1,6 +1,6 @@
 import React from "react";
 
-const Nav = () =>{
+const Nav = (props) =>{
     return(
         <div className="navbar">
             <div className="title">
@@ -9,7 +9,7 @@ const Nav = () =>{
                     <h1>Pokédex</h1>
                 </div>
                 <div className="order-button">
-                    <span>#</span>
+                    <span onClick={()=>{props.changeOrder()}}>{props.pokemonOrder}</span>
                     <img src="../Imagenes/Arrow.svg" alt="" />
                 </div>
             </div>
