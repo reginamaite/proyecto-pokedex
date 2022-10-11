@@ -1,14 +1,15 @@
 import './App.css';
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 import Nav from './App/Pokemon-Search/Nav';
 import PokemonList from './App/List/PokemonList';
 import {pokemon}  from './Database/db';
+//import {search} from './components/search'; 
 
 
 function App() {
   const [pokemonList,setPokemonList] = useState (pokemon)
   const [pokemonOrder,setPokemonOrder] = useState ("#")
-  
+
   const changeOrder = () =>{
     if (pokemonOrder === "#"){
       setPokemonOrder("AZ")
@@ -17,6 +18,11 @@ function App() {
       setPokemonOrder("#")
     }
   } 
+  useEffect(() => {
+      console.log("el valor de pokemon order es"+pokemonOrder)
+  },[pokemonOrder])
+
+
 
   console.log(
     pokemonList.sort((a, b) => {
@@ -26,11 +32,6 @@ function App() {
     })
   )
 
-  const paragraph = 'a,b,c';
-  const regex = /[A-Z]/g;
-  const found = paragraph.match(regex);
-  
-  console.log(found);
 
   return (
     <div className="App">

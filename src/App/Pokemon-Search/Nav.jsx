@@ -16,7 +16,7 @@ const Nav = (props) =>{
 
             <div>
                 <form action="#">
-                    <input className="input" type="search" placeholder="Buscar" name="search"/>
+                    <input value={props.search} onChange={props.searcher} className="input" type="search" placeholder="Buscar" name="search"/>
                 </form>
             </div>
 
