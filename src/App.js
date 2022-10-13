@@ -3,19 +3,29 @@ import {useState,useEffect} from 'react'
 import Nav from './App/Pokemon-Search/Nav';
 import PokemonList from './App/List/PokemonList';
 import {pokemon}  from './Database/db';
-//import {search} from './components/search'; 
+
 
 
 function App() {
   const [pokemonList,setPokemonList] = useState (pokemon)
   const [pokemonOrder,setPokemonOrder] = useState ("#")
-
+  const [search, setSearch] = useState("");
   const changeOrder = () =>{
     if (pokemonOrder === "#"){
       setPokemonOrder("AZ")
+      pokemonList.sort((A, B) => {
+        if (A.name > B.name) return 1
+        if (A.name < B.name) return -1
+        return 0
+      })
     }
     else{
       setPokemonOrder("#")
+      pokemonList.sort((A, B) => {
+        if (A.id > B.id) return 1
+        if (A.id < B.id) return -1
+        return 0
+      })
     }
   } 
   useEffect(() => {
@@ -25,22 +35,23 @@ function App() {
 
 
   console.log(
-    pokemonList.sort((a, b) => {
-      if (a.name > b.name) return 1
-      if (a.name < b.name) return -1
-      return 0
-    })
+    
   )
-
+ 
 
   return (
     <div className="App">
             <div className='app-navbar'>
               <Nav pokemonOrder={pokemonOrder}
+                    search={search}
+                    setSearch={setSearch}
                    changeOrder={changeOrder} />
+                                 
             </div>
             
-            <PokemonList list={pokemonList}/>
+            <PokemonList list={pokemonList.
+                                filter((pokemon)=>pokemon.name.
+                                          toLowerCase().includes(search.toLowerCase()))}/>
     </div>
   );
 }

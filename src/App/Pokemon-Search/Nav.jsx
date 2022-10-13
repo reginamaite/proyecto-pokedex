@@ -1,6 +1,11 @@
 import React from "react";
+import {useState,useEffect} from 'react'
 
 const Nav = (props) =>{
+    const change = (e) => {
+        props.setSearch(e.target.value);
+    }
+
     return(
         <div className="navbar">
             <div className="title">
@@ -16,7 +21,7 @@ const Nav = (props) =>{
 
             <div>
                 <form action="#">
-                    <input value={props.search} onChange={props.searcher} className="input" type="search" placeholder="Buscar" name="search"/>
+                    <input value={props.search} onChange={change} className="input" type="search" placeholder="Buscar pokemon" name="search"/>
                 </form>
             </div>
 
@@ -26,3 +31,4 @@ const Nav = (props) =>{
 }
 
 export default Nav
+
