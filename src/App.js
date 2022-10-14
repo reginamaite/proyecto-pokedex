@@ -3,10 +3,13 @@ import {useState,useEffect} from 'react'
 import Nav from './App/Pokemon-Search/Nav';
 import PokemonList from './App/List/PokemonList';
 import {pokemon}  from './Database/db';
+import Detalle from './App/Cards/detalle';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
 
-function App() {
+
+function PokemonGrid() {
   const [pokemonList,setPokemonList] = useState (pokemon)
   const [pokemonOrder,setPokemonOrder] = useState ("#")
   const [search, setSearch] = useState("");
@@ -33,10 +36,6 @@ function App() {
   },[pokemonOrder])
 
 
-
-  console.log(
-    
-  )
  
 
   return (
@@ -52,8 +51,26 @@ function App() {
             <PokemonList list={pokemonList.
                                 filter((pokemon)=>pokemon.name.
                                           toLowerCase().includes(search.toLowerCase()))}/>
-    </div>
+
+  
+                                          </div>
   );
 }
 
+function AppRoutes(){
+  return(
+    <Routes>
+      <Route path='/' element={<PokemonGrid/>} />
+      <Route path='/detalle' element={<Detalle/>} />
+    </Routes>
+  )
+}
+
+function App(){
+  return(
+    <BrowserRouter>
+    <AppRoutes/>
+    </BrowserRouter>
+  )
+}
 export default App;

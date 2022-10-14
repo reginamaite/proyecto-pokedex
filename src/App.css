@@ -120,6 +120,24 @@ align-items: center;
   border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
+.card-body{
+  width:250%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;;
+}
+
+.card{
+  border: 2px solid #74CB48;
+  background-color:#74CB48;
+  width: 25%;
+  height: 90%;
+}
+
+
 .grass{
   border: 2px solid #74CB48;
 }
@@ -192,3 +210,7 @@ align-items: center;
   background-color:#F9CF30;
 }
 
+
+.link-pokemon{
+  text-decoration: none;
+}
