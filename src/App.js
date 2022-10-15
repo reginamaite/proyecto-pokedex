@@ -43,42 +43,41 @@ function PokemonGrid (){
     </>
   );
 }
-async function fetchData(){
-  let aux=[]
-    for (let index = 1; index < 20; index++) {
-      await fetch("https://pokeapi.co/api/v2/pokemon/"+index)
-      .then((data)=>data.json())
-      .then((data)=>{
-        console.log(data)
-        aux.push({
-          "id" : data.id,
-          "name": data.name,
-          "type":data.types.map((type)=>type.type.name),
-          "weight": data.weight,
-          "height": data.height,
-          "moves": data.abilities.map((ability)=>ability.ability.name),
-          "hp":data.stats[0].base_stat,
-          "atk":data.stats[1].base_stat,
-          "def":data.stats[2].base_stat,
-          "satk":data.stats[3].base_stat,
-          "sdef":data.stats[4].base_stat,
-          "spd":data.stats[5].base_stat,
-      })
-      })
-    }
-    for (let index = 1; index < 20; index++) {
-      await fetch("https://pokeapi.co/api/v2/characteristic/"+index)
-      .then((data)=>data.json())
-      .then((data)=>{
-        aux[index-1].description = data.descriptions[7].description
-      })
-    }
-    //setPokemonList(aux)
-}
 
 function App() {
   useEffect(()=>{
-    
+    async function fetchData(){
+      let aux=[]
+        for (let index = 1; index < 20; index++) {
+          await fetch("https://pokeapi.co/api/v2/pokemon/"+index)
+          .then((data)=>data.json())
+          .then((data)=>{
+            console.log(data)
+            aux.push({
+              "id" : data.id,
+              "name": data.name,
+              "type":data.types.map((type)=>type.type.name),
+              "weight": data.weight,
+              "height": data.height,
+              "moves": data.abilities.map((ability)=>ability.ability.name),
+              "hp":data.stats[0].base_stat,
+              "atk":data.stats[1].base_stat,
+              "def":data.stats[2].base_stat,
+              "satk":data.stats[3].base_stat,
+              "sdef":data.stats[4].base_stat,
+              "spd":data.stats[5].base_stat,
+          })
+          })
+        }
+        for (let index = 1; index < 20; index++) {
+          await fetch("https://pokeapi.co/api/v2/characteristic/"+index)
+          .then((data)=>data.json())
+          .then((data)=>{
+            aux[index-1].description = data.descriptions[7].description
+          })
+        }
+        console.log(aux)
+    }
     fetchData()
   },[]
   )
