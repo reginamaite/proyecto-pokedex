@@ -7,11 +7,9 @@ import TableType from "./Table-type";
 
 const CardInformation = () =>{
     const id = useParams().id
-    console.log(pokemon)
     const [poke,setPokemon] = useState(pokemon.find((candidate)=>candidate.id ==id))
     let index = pokemon.indexOf(poke)
     function getZeroes(number){
-        console.log(number)
         return number.toString().padStart(3,'0')
     }
 
