@@ -48,12 +48,10 @@ function PokemonGrid() {
                                  
             </div>
             
-            <PokemonList list={pokemonList.
-                                filter((pokemon)=>pokemon.name.
-                                          toLowerCase().includes(search.toLowerCase()))}/>
-
-  
-                                          </div>
+    <PokemonList list={pokemonList.
+        filter((pokemon)=>pokemon.name.
+            toLowerCase().includes(search.toLowerCase()))}/>
+</div>
   );
 }
 
@@ -61,7 +59,7 @@ function AppRoutes(){
   return(
     <Routes>
       <Route path='/' element={<PokemonGrid/>} />
-      <Route path='/detalle' element={<Detalle/>} />
+      <Route path='/:id' element={<Detalle/>} />
     </Routes>
   )
 }
