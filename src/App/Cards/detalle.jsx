@@ -1,7 +1,9 @@
 import React, { useState } from "react"
 import { useEffect } from "react"
 import { useParams } from "react-router-dom"
-import { pokemon } from "../../Database/db" 
+import { pokemon } from "../../Database/db"
+
+
 const PokemonDetalle = ({Detalle}) =>{
     console.log(Detalle)
     return(
@@ -23,10 +25,12 @@ const PokemonDetalle = ({Detalle}) =>{
     )
 }
 
+
 function Detalle() {
     const {id} = useParams()
     const [pokemonList,setPokemonList] = useState (pokemon)
     const [pokedata, setPokedata] = useState()
+
     
     /* 
         Filtrar el list el id del pokemon que esta definido en la variable id
